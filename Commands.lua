@@ -51,7 +51,7 @@ function handleMoneyGive(a_Split, a_Player)
 	if (a_Split[4] == nil) then  -- We need at least 4 parameters
 		a_Player:SendMessage(cCompositeChat("Usage: ", mtFailure)
 			:AddSuggestCommandPart(a_Split[1] .. " give", a_Split[1] .. " give")
-			:AddTextPart("PlayerName Amount [Message]", "@2")
+			:AddTextPart("PlayerName Amount [Message]", "2")
 		)
 		return true
 	end
@@ -104,7 +104,7 @@ function handleMoneyRemove(a_Split, a_Player)
 	if (a_Split[4] == nil) then  -- We need at least 4 parameters
 		a_Player:SendMessage(cCompositeChat("Usage: ", mtFailure)
 			:AddSuggestCommandPart(a_Split[1] .. " remove", a_Split[1] .. " remove")
-			:AddTextPart("PlayerName Amount [Message]", "@2")
+			:AddTextPart("PlayerName Amount [Message]", "2")
 		)
 		return true
 	end
@@ -150,7 +150,7 @@ function handleMoneyTransfer(a_Split, a_Player)
 	if (a_Split[4] == nil) then  -- We need at least 4 parameters
 		a_Player:SendMessage(cCompositeChat("Usage: ", mtFailure)
 			:AddSuggestCommandPart(a_Split[1] .. " transfer", a_Split[1] .. " transfer")
-			:AddTextPart("PlayerName Amount [Message]", "@2")
+			:AddTextPart("PlayerName Amount [Message]", "2")
 		)
 		return true
 	end
